@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <style>
+        *{ box-sizing: border-box; }
+        body{
+            margin: 0px;
+            overflow-y: hidden;
+        }
+        header{
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }  
+        nav{
+            background-color: lightseagreen;
+            overflow: hidden;
+        }
+        nav a{
+            display: block;
+            float: left;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        section{
+            float: left;
+            width: 50%;
+            border: 1px solid;
+            padding: 10px;
+        }
+        footer{
+            height: 100px;
+            background-color: darkcyan;
+            margin-top: 40%;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- tag semantica para topo -->
+    <header>
+        <h1>topo</h1>
+        <p>um legenda simples</p>
+    </header>
+
+    <!-- tag semantica para navegação -->
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+
+    <!-- tag semantica para conteudo principal -->
+    <main>
+        <!-- tag semantica para seção -->
+        <section>
+            <article>
+                <h2>coluna</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis delectus ad optio quod beatae obcaecati. Dolorum, debitis ipsam! Modi velit iste porro quia neque odio fugiat eos at similique?
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>coluna</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis delectus ad optio quod beatae obcaecati. Dolorum, debitis ipsam! Modi velit iste porro quia neque odio fugiat eos at similique?
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>final do site.</p>
+    </footer>
+</body>
+</html>
